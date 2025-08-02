@@ -37,176 +37,72 @@
   <!-- Solutions Section -->
   <section id="solutions" class="bg-white text-gray-900 py-16 px-6">
     <h2 class="text-3xl font-bold text-center mb-10">Featured Agents</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-      <!-- Example Card -->
-      <div class="bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6">
-        <div class="text-3xl mb-4">⚙️</div>
-        <h3 class="text-xl font-bold mb-2">Grid Fault Forecast Agent</h3>
-        <p class="text-sm text-gray-700 mb-4">
-          Predict and analyze grid faults using historical data, sensor feeds, and GenAI root cause learning.
-        </p>
-        <div class="text-sm text-gray-600 mb-2">KPIs: Downtime, Fault Frequency</div>
-        <div class="text-sm text-gray-600 mb-4">BENEFITS: Reduces unplanned outages by 25%</div>
-        <a href="#demos" class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700">
-          Show Demo
-        </a>
-      </div>
-      <div class="bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6 card">
-        <div class="text-3xl mb-4">🔧</div>
-        <h3 class="text-xl font-bold mb-2">Asset Integrity GenAI</h3>
-        <p class="text-sm text-gray-700 mb-4">Monitors asset health and predicts failures using historical logs and image data.</p>
-        <div class="text-sm text-gray-600 mb-2">KPIs: Uptime, Risk Alerts</div>
-        <div class="text-sm text-gray-600 mb-4">BENEFITS: Reduces unexpected breakdowns</div>
-        <button onclick="openModal('/Asset_Integrity_Manager.mp4')" class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700 w-full">Show Demo</button>
-      </div>
-      <div class="bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6 card">
-        <div class="text-3xl mb-4">🧩</div>
-        <h3 class="text-xl font-bold mb-2">Application Maintenance Agent</h3>
-        <p class="text-sm text-gray-700 mb-4">Automates SAP issue resolution via GenAI root cause and fix agent.</p>
-        <div class="text-sm text-gray-600 mb-2">KPIs: MTTR, Ticket Resolution</div>
-        <div class="text-sm text-gray-600 mb-4">BENEFITS: Accelerates ticket closure by 40%</div>
-        <button onclick="openModal('https://drive.google.com/file/d/1t63TO_dKCxp4OQEtIGCW0H2pFbM_5415/preview')" class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700 w-full">Show Demo</button>
-      </div>
-      <div class="bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6 card">
-        <div class="text-3xl mb-4">📊</div>
-        <h3 class="text-xl font-bold mb-2">O&G Analytics Agent</h3>
-        <p class="text-sm text-gray-700 mb-4">Analyzes real-time drilling and production metrics for actionable insights.</p>
-        <div class="text-sm text-gray-600 mb-2">KPIs: Production Rate, Downtime</div>
-        <div class="text-sm text-gray-600 mb-4">BENEFITS: Improves decision-making accuracy</div>
-        <button onclick="openModal('https://drive.google.com/file/d/120WvBpvVF_25F2nkiH4XdYLW1ccVBhI_/preview')" class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700 w-full">Show Demo</button>
-      </div>
-      <div class="bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6 card">
-        <div class="text-3xl mb-4">⚗️</div>
-        <h3 class="text-xl font-bold mb-2">O&G Chemical Formula Agent</h3>
-        <p class="text-sm text-gray-700 mb-4">Recommends optimal chemical dosages based on real-time input data.</p>
-        <div class="text-sm text-gray-600 mb-2">KPIs: Dosage Efficiency</div>
-        <div class="text-sm text-gray-600 mb-4">BENEFITS: Cuts chemical usage by 10–15%</div>
-        <button onclick="openModal('https://drive.google.com/file/d/1_KRZytmdpbN4sd1MZSbUKWnewXmo_Hf1/preview')" class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700 w-full">Show Demo</button>
-      </div>
-      <div class="bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6 card">
-        <div class="text-3xl mb-4">📈</div>
-        <h3 class="text-xl font-bold mb-2">Demand Forecasting Agent</h3>
-        <p class="text-sm text-gray-700 mb-4">Forecasts energy demand using historical usage, weather patterns, and real-time feeds.</p>
-        <div class="text-sm text-gray-600 mb-2">KPIs: Forecast Accuracy, Grid Load</div>
-        <div class="text-sm text-gray-600 mb-4">BENEFITS: Enables proactive load balancing</div>
-        <button onclick="openModal('https://drive.google.com/file/d/1lNhrCm-LUGGfDX4MZaqtHueiQmWpvjQD/preview')" class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700 w-full">Show Demo</button>
-      </div>
-      <div class="bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6 card">
-        <div class="text-3xl mb-4">💹</div>
-        <h3 class="text-xl font-bold mb-2">O&G Price Forecasting Agent</h3>
-        <p class="text-sm text-gray-700 mb-4">Predicts oil & gas prices using ML models trained on market trends, events, and supply chain inputs.</p>
-        <div class="text-sm text-gray-600 mb-2">KPIs: Price Prediction Error</div>
-        <div class="text-sm text-gray-600 mb-4">BENEFITS: Improves trade profitability</div>
-        <button onclick="openModal('https://drive.google.com/file/d/1vEArkW8z5Zuzd7Mf7xmOMPhaIdZK9Eu5/preview')" class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700 w-full">Show Demo</button>
-      </div>
-      <div class="bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6 card">
-        <div class="text-3xl mb-4">🛢️</div>
-        <h3 class="text-xl font-bold mb-2">Drilling Optimization Agent</h3>
-        <p class="text-sm text-gray-700 mb-4">Monitors torque, ROP, WOB, and sensor data to optimize drilling performance.</p>
-        <div class="text-sm text-gray-600 mb-2">KPIs: NPT, Drilling Efficiency</div>
-        <div class="text-sm text-gray-600 mb-4">BENEFITS: Reduces drilling time by 10–15%</div>
-        <button onclick="openModal('https://drive.google.com/file/d/1pDjfChdDflUKlvH7cmG9FBEglUK_jKVI/preview')" class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700 w-full">Show Demo</button>
-      </div>
-      <div class="bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6 card">
-        <div class="text-3xl mb-4">⚡</div>
-        <h3 class="text-xl font-bold mb-2">Utility Energy Management Agent</h3>
-        <p class="text-sm text-gray-700 mb-4">Optimizes real-time load balancing, DER coordination, and peak shaving.</p>
-        <div class="text-sm text-gray-600 mb-2">KPIs: Energy Cost, Load Balance</div>
-        <div class="text-sm text-gray-600 mb-4">BENEFITS: Cuts peak demand costs</div>
-        <button onclick="openModal('https://drive.google.com/file/d/1Gr2ZFB-eU4ejcuvIRTSVeZcQjyUezZBH/preview')" class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700 w-full">Show Demo</button>
-      </div>
-      <div class="bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6 card">
-        <div class="text-3xl mb-4">💱</div>
-        <h3 class="text-xl font-bold mb-2">Energy Trading Agent</h3>
-        <p class="text-sm text-gray-700 mb-4">Assists in bidding and trade optimization using forecasts and market rules.</p>
-        <div class="text-sm text-gray-600 mb-2">KPIs: Trading Margin, Forecast Deviation</div>
-        <div class="text-sm text-gray-600 mb-4">BENEFITS: Enhances trade efficiency</div>
-        <button onclick="openModal('https://drive.google.com/file/d/1j89-N1tF_untMJBvi7YRB9UxCAMKofLd/preview')" class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700 w-full">Show Demo</button>
-      </div>
-      <div class="bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6 card">
-        <div class="text-3xl mb-4">🛰️</div>
-        <h3 class="text-xl font-bold mb-2">Renewable Energy Integration Agent</h3>
-        <p class="text-sm text-gray-700 mb-4">Forecasts solar/wind output and adjusts grid ops for stability.</p>
-        <div class="text-sm text-gray-600 mb-2">KPIs: Forecast Accuracy, Curtailment</div>
-        <div class="text-sm text-gray-600 mb-4">BENEFITS: Enhances renewables usage</div>
-        <button onclick="openModal('https://drive.google.com/file/d/1RQG4eO5fVaKVlJqmhTfEtsZlii8G-tOC/preview')" class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700 w-full">Show Demo</button>
-      </div>
-      <div class="bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6 card">
-        <div class="text-3xl mb-4">🛢️</div>
-        <h3 class="text-xl font-bold mb-2">Reservoir Analysis Agent</h3>
-        <p class="text-sm text-gray-700 mb-4">Evaluates reservoir performance using well logs and simulator feeds.</p>
-        <div class="text-sm text-gray-600 mb-2">KPIs: Recovery Factor, Pressure</div>
-        <div class="text-sm text-gray-600 mb-4">BENEFITS: Aids in optimal field development</div>
-        <button onclick="openModal('https://drive.google.com/file/d/1Nponfo00hMwNyKu4mCzl5-Yiz9KNU1hM/preview')" class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700 w-full">Show Demo</button>
-      </div>
-      <div class="bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6 card">
-        <div class="text-3xl mb-4">🧯</div>
-        <h3 class="text-xl font-bold mb-2">O&G Safety Agent</h3>
-        <p class="text-sm text-gray-700 mb-4">Predicts safety hazards from real-time logs, sensor data, and compliance risks.</p>
-        <div class="text-sm text-gray-600 mb-2">KPIs: Incident Rate, Safety Score</div>
-        <div class="text-sm text-gray-600 mb-4">BENEFITS: Proactively mitigates field risk</div>
-        <button onclick="openModal('https://drive.google.com/file/d/1h-BcpStrFXZJvWoKlEkDY85grXrAMCkA/preview')" class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700 w-full">Show Demo</button>
-      </div>
-      <div class="bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6 card">
-        <div class="text-3xl mb-4">👷‍♂️</div>
-        <h3 class="text-xl font-bold mb-2">Streamlining Field Ops Agent</h3>
-        <p class="text-sm text-gray-700 mb-4">Analyzes faults, predicts risks, and suggests optimized work orders for technicians.</p>
-        <div class="text-sm text-gray-600 mb-2">KPIs: Field Efficiency, Resolution Time</div>
-        <div class="text-sm text-gray-600 mb-4">BENEFITS: Automates dispatch and risk advisory</div>
-        <button onclick="openModal('https://drive.google.com/file/d/1SXb32u7olqubaJ-DuP8AyA9Uw7mJAgja/preview')" class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700 w-full">Show Demo</button>
-      </div>
-      <div class="bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6 card">
-        <div class="text-3xl mb-4">🔗</div>
-        <h3 class="text-xl font-bold mb-2">Supply Chain Opt Agent</h3>
-        <p class="text-sm text-gray-700 mb-4">Optimizes part ordering, vendor selection, and logistics for utilities and drilling.</p>
-        <div class="text-sm text-gray-600 mb-2">KPIs: Lead Time, Stockouts</div>
-        <div class="text-sm text-gray-600 mb-4">BENEFITS: Minimizes delays and inventory costs</div>
-        <button onclick="openModal('https://drive.google.com/file/d/15k-G-GWDHEaT4n28oLTC2QlZjJzbHit_/preview')" class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700 w-full">Show Demo</button>
-      </div>
-      <div class="bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6 card">
-        <div class="text-3xl mb-4">🛠️</div>
-        <h3 class="text-xl font-bold mb-2">Support Helper Agent</h3>
-        <p class="text-sm text-gray-700 mb-4">Assists L1/L2 ticket teams with GenAI RCA, fixes, KB articles and validation.</p>
-        <div class="text-sm text-gray-600 mb-2">KPIs: First-time Resolution, KB Hits</div>
-        <div class="text-sm text-gray-600 mb-4">BENEFITS: Enhances user support automation</div>
-        <button onclick="openModal('https://drive.google.com/file/d/1V2QwmwqJebf-fj4wLCow20hlIhq-wMSj/preview')" class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700 w-full">Show Demo</button>
-      </div>
-      <div class="bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6 card">
-        <div class="text-3xl mb-4">🌧️</div>
-        <h3 class="text-xl font-bold mb-2">Water LLM Storm Simulator</h3>
-        <p class="text-sm text-gray-700 mb-4">Forecasts overflow and simulates pump/tank response for storm handling in water systems.</p>
-        <div class="text-sm text-gray-600 mb-2">KPIs: Overflow Avoidance, Tank Balance</div>
-        <div class="text-sm text-gray-600 mb-4">BENEFITS: Prevents CSO discharge and balances capacity</div>
-        <button onclick="openModal('https://drive.google.com/file/d/17j_SFOBoDi3dWkTCbS_nA29taPs_wB3G/preview')" class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700 w-full">Show Demo</button>
-      </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="cards">
+      <!-- Cards will be injected here -->
     </div>
   </section>
+
   <!-- Modal -->
   <div id="modal" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-75 z-50">
     <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative">
       <video id="modalVideo" class="w-full h-96" controls>
-  <source id="modalSource" src="" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+        <source id="modalSource" src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <button onclick="closeModal()" class="absolute top-2 right-4 text-2xl text-red-600 font-bold">&times;</button>
     </div>
   </div>
 
-  <!-- Script -->
   <script>
-    function openModal(url) {
-  document.getElementById('modalSource').src = url;
-  document.getElementById('modalVideo').load();
-  document.getElementById('modal').classList.remove('hidden');
-  document.getElementById('modal').classList.add('flex');
-}
+    const agents = [
+      { icon: "🛠️", title: "Application Maintenance Agent", desc: "Automates ticket resolution in SAP with GenAI-based fix agents.", kpis: "MTTR, Ticket Closure", benefits: "Improves SAP ops", video: "Application_Maintenence_Agent.mp4" },
+      { icon: "🧱", title: "Asset Integrity Manager", desc: "AI visual and log-based fault detection across infrastructure.", kpis: "Risk Avoidance", benefits: "Reduces failures", video: "Asset_Integrity_Manager.mp4" },
+      { icon: "📈", title: "Demand Forecasting Agent", desc: "Forecasts demand using weather and historical consumption.", kpis: "Accuracy, Cost", benefits: "Improves load planning", video: "Demand_Forecasting_Agent.mp4" },
+      { icon: "⛏️", title: "Drilling Optimization Agent", desc: "Real-time drilling AI advisor with sensor-based tuning.", kpis: "ROP, Bit Wear", benefits: "Boosts drilling efficiency", video: "Drilling_Optimization_Agent.mp4" },
+      { icon: "💹", title: "Energy Trading Agent", desc: "Price prediction, trading strategies, and risk detection.", kpis: "P&L, Hit Ratio", benefits: "Maximizes trading gain", video: "Energy_Trading_Agent.mp4" },
+      { icon: "🔌", title: "Grid Fault Forecasting Agent", desc: "Root cause, forecast & impact using real-time grid data.", kpis: "Downtime", benefits: "Mitigates failures", video: "Grid_Fault_Analysis_Forecasting_Agent.mp4" },
+      { icon: "📊", title: "O&G Price Forecast Agent", desc: "Forecasts oil & gas prices using macro + ops data.", kpis: "MAPE, P&L", benefits: "Supports trading desk", video: "O&G_Price_Forecast_Agent.mp4" },
+      { icon: "⛽", title: "O&G Analytics Agent", desc: "Live analytics of O&G ops + predictive insights.", kpis: "Prod Rate", benefits: "Cuts losses", video: "O_G_Analytics_Agent.mp4" },
+      { icon: "⚗️", title: "O&G Chemical Formula Agent", desc: "Real-time optimal chemical formulation agent.", kpis: "Dosage", benefits: "Reduces waste", video: "O_G_Chemical_Formula_Agent.mp4" },
+      { icon: "🧯", title: "O&G Safety Agent", desc: "Workplace safety risk forecasting using GenAI.", kpis: "Incidents Avoided", benefits: "Prevents fatalities", video: "O_G_Safety.mp4" },
+      { icon: "🔄", title: "Renewable Energy Integration", desc: "Forecast + optimize renewable load using real-time data.", kpis: "Stability", benefits: "Balances renewables", video: "renewable_energy_integration_and_management.mp4" },
+      { icon: "💧", title: "Reservoir Analysis Agent", desc: "Simulator + GenAI-based reservoir advisory.", kpis: "Recovery Factor", benefits: "Improves recovery", video: "Reservoir_Analysis_Agent.mp4" },
+      { icon: "🚛", title: "Streamlining Field Ops Agent", desc: "Field task planner using risk, asset, and weather input.", kpis: "Dispatch Time", benefits: "Improves field ops", video: "Streamlining_Field_Ops_Agent.mp4" },
+      { icon: "🔗", title: "Supply Chain Opt Agent", desc: "Reorder, lead time & vendor optimization for utilities.", kpis: "Stock-outs", benefits: "Ensures readiness", video: "Supply_Chain_Opt_Agent.mp4" },
+      { icon: "👨‍💻", title: "Support Helper Agent", desc: "Auto-triage SAP tickets + LLM-based RCA/fix/KB.", kpis: "First Fix Rate", benefits: "Resolves tickets fast", video: "Support_Helper_Agent.mp4" },
+      { icon: "🚰", title: "Utility Energy Management Agent", desc: "Substation, load, and pricing advisor.", kpis: "Energy Usage", benefits: "Improves grid cost", video: "Utility_Energy_Management_Agent.mp4" },
+      { icon: "🌧️", title: "Water LLM Storm Simulator", desc: "Storm tank and pump overflow avoidance.", kpis: "Overflow", benefits: "Avoids CSOs", video: "Water_LLM_Storm_Simulator.mp4" }
+    ];
+
+    const cardsContainer = document.getElementById("cards");
+    agents.forEach(agent => {
+      const card = document.createElement("div");
+      card.className = "bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6 card";
+      card.innerHTML = `
+        <div class="text-3xl mb-4">${agent.icon}</div>
+        <h3 class="text-xl font-bold mb-2">${agent.title}</h3>
+        <p class="text-sm text-gray-700 mb-4">${agent.desc}</p>
+        <div class="text-sm text-gray-600 mb-2">KPIs: ${agent.kpis}</div>
+        <div class="text-sm text-gray-600 mb-4">BENEFITS: ${agent.benefits}</div>
+        <button onclick="openModal('${agent.video}')" class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700 w-full">Show Demo</button>
+      `;
+      cardsContainer.appendChild(card);
+    });
+
+    function openModal(filename) {
+      const fullPath = `/videos/${filename}`;
+      document.getElementById('modalSource').src = fullPath;
+      document.getElementById('modalVideo').load();
+      document.getElementById('modal').classList.remove('hidden');
+      document.getElementById('modal').classList.add('flex');
+    }
 
     function closeModal() {
-  document.getElementById('modalSource').src = "";
-  document.getElementById('modalVideo').load();
-  document.getElementById('modal').classList.add('hidden');
-  document.getElementById('modal').classList.remove('flex');
-}
+      document.getElementById('modalSource').src = "";
+      document.getElementById('modalVideo').load();
+      document.getElementById('modal').classList.add('hidden');
+      document.getElementById('modal').classList.remove('flex');
+    }
   </script>
 </body>
 
