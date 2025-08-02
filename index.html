@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TCS ERU Agents</title>
+  <title>TCS Energy & Utilities ISU - Deployable Agents</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
@@ -24,7 +24,7 @@
 <body>
   <!-- Hero Section -->
   <section class="text-center py-24 px-6">
-    <h1 class="text-5xl font-extrabold mb-4">TCS ERU Agents</h1>
+    <h1 class="text-5xl font-extrabold mb-4">TCS Energy & Utilities ISU - Deployable Agents</h1>
     <p class="text-lg max-w-3xl mx-auto mb-6">
       Transform your energy utility operations with intelligent AI agents.<br>
       Optimize efficiency, reduce costs, and enhance sustainability across your entire ERU ecosystem.
@@ -90,7 +90,7 @@
     });
 
     function openModal(filename) {
-      const fullPath = `/videos/${filename}`;
+      const fullPath = "/public/" + filename;  // Ensure path points to correct Vercel location
       document.getElementById('modalSource').src = fullPath;
       document.getElementById('modalVideo').load();
       document.getElementById('modal').classList.remove('hidden');
