@@ -71,8 +71,10 @@
       { icon: "ἲ7️", title: "Water LLM Storm Simulator", desc: "Storm tank and pump overflow avoidance.", kpis: "Overflow", benefits: "Avoids CSOs", video: "https://www.youtube.com/embed/zK1q3wIUd7w?si=8y4e4LRvxXPuYLf3" }
     ];
 
+    
     const cardsContainer = document.getElementById("cards");
-    agents.forEach(agent => {
+
+    function renderCard(agent) {
       const card = document.createElement("div");
       card.className = "bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6 card";
       card.innerHTML = `
@@ -84,7 +86,18 @@
         <button onclick="openModal('${agent.video}')" class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700 w-full">Show Demo</button>
       `;
       cardsContainer.appendChild(card);
-    });
+    }
+    cardsContainer.innerHTML += `<div class='col-span-full text-2xl font-semibold text-gray-800 mt-12 mb-4'>Utility</div>`;
+      agents.filter(a => ['Asset Integrity Manager', 'Demand Forecasting Agent', 'Energy Trading Agent', 'Grid Fault Forecasting Agent', 'Renewable Energy Integration', 'Streamlining Field Ops Agent', 'Supply Chain Opt Agent', 'Utility Energy Management Agent'].includes(a.title)).forEach(agent => renderCard(agent));
+    
+      cardsContainer.innerHTML += `<div class='col-span-full text-2xl font-semibold text-gray-800 mt-12 mb-4'>Oil & Gas</div>`;
+      agents.filter(a => ['O&G Price Forecast Agent', 'O&G Analytics Agent', 'O&G Chemical Formula Agent', 'O&G Safety Agent', 'Reservoir Analysis Agent', 'Drilling Optimization Agent'].includes(a.title)).forEach(agent => renderCard(agent));
+    
+      cardsContainer.innerHTML += `<div class='col-span-full text-2xl font-semibold text-gray-800 mt-12 mb-4'>Water</div>`;
+      agents.filter(a => ['Water LLM Storm Simulator'].includes(a.title)).forEach(agent => renderCard(agent));
+    
+      cardsContainer.innerHTML += `<div class='col-span-full text-2xl font-semibold text-gray-800 mt-12 mb-4'>Application Maintenance</div>`;
+      agents.filter(a => ['Application Maintenance Agent', 'Support Helper Agent'].includes(a.title)).forEach(agent => renderCard(agent));
 
     function openModal(videoURL) {
       let finalURL = videoURL;
