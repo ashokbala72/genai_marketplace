@@ -53,22 +53,22 @@
   <script>
     const agents = [
       { icon: "🛠️", title: "Application Maintenance Agent", desc: "Automates ticket resolution in SAP with GenAI-based fix agents.", kpis: "MTTR, Ticket Closure", benefits: "Improves SAP ops", video: "https://www.youtube.com/embed/SHkoBR0Bblc?si=ekyoOr9dYDjQ4Z3y" },
-      { icon: "🧱", title: "Asset Integrity Manager", desc: "AI visual and log-based fault detection across infrastructure.", kpis: "Risk Avoidance", benefits: "Reduces failures", video: "Asset_Integrity_Manager.mp4" },
-      { icon: "📈", title: "Demand Forecasting Agent", desc: "Forecasts demand using weather and historical consumption.", kpis: "Accuracy, Cost", benefits: "Improves load planning", video: "Demand_Forecasting_Agent.mp4" },
-      { icon: "⛏️", title: "Drilling Optimization Agent", desc: "Real-time drilling AI advisor with sensor-based tuning.", kpis: "ROP, Bit Wear", benefits: "Boosts drilling efficiency", video: "Drilling_Optimization_Agent.mp4" },
-      { icon: "📉", title: "Energy Trading Agent", desc: "Price prediction, trading strategies, and risk detection.", kpis: "P&L, Hit Ratio", benefits: "Maximizes trading gain", video: "Energy_Trading_Agent.mp4" },
-      { icon: "🔌", title: "Grid Fault Forecasting Agent", desc: "Root cause, forecast & impact using real-time grid data.", kpis: "Downtime", benefits: "Mitigates failures", video: "Grid_Fault_Analysis_Forecasting_Agent.mp4" },
-      { icon: "📊", title: "O&G Price Forecast Agent", desc: "Forecasts oil & gas prices using macro + ops data.", kpis: "MAPE, P&L", benefits: "Supports trading desk", video: "O&G_Price_Forecast_Agent.mp4" },
-      { icon: "⛽", title: "O&G Analytics Agent", desc: "Live analytics of O&G ops + predictive insights.", kpis: "Prod Rate", benefits: "Cuts losses", video: "O_G_Analytics_Agent.mp4" },
-      { icon: "⚗️", title: "O&G Chemical Formula Agent", desc: "Real-time optimal chemical formulation agent.", kpis: "Dosage", benefits: "Reduces waste", video: "O_G_Chemical_Formula_Agent.mp4" },
+      { icon: "🧱", title: "Asset Integrity Manager", desc: "AI visual and log-based fault detection across infrastructure.", kpis: "Risk Avoidance", benefits: "Reduces failures", video: "https://www.youtube.com/embed/Q-SkiJQSre8?si=hIJu7deTIACUkRMU" },
+      { icon: "📈", title: "Demand Forecasting Agent", desc: "Forecasts demand using weather and historical consumption.", kpis: "Accuracy, Cost", benefits: "Improves load planning", video: "https://www.youtube.com/embed/iybloeDCQsA?si=NEYbbYzvQ_vVHQ54" },
+      { icon: "⛏️", title: "Drilling Optimization Agent", desc: "Real-time drilling AI advisor with sensor-based tuning.", kpis: "ROP, Bit Wear", benefits: "Boosts drilling efficiency", video: "https://www.youtube.com/embed/rprZQ2dKnDU?si=5ah056vQD9IeWBa1" },
+      { icon: "📉", title: "Energy Trading Agent", desc: "Price prediction, trading strategies, and risk detection.", kpis: "P&L, Hit Ratio", benefits: "Maximizes trading gain", video: "https://www.youtube.com/embed/S0F6N-8dnzg?si=ZHHIicfWyHM7ony3" },
+      { icon: "🔌", title: "Grid Fault Forecasting Agent", desc: "Root cause, forecast & impact using real-time grid data.", kpis: "Downtime", benefits: "Mitigates failures", video: "https://www.youtube.com/embed/okJR2SiIUiw?si=tZTc1sLboc32iVB7" },
+      { icon: "📊", title: "O&G Price Forecast Agent", desc: "Forecasts oil & gas prices using macro + ops data.", kpis: "MAPE, P&L", benefits: "Supports trading desk", video: "https://www.youtube.com/embed/ketkIywmvIY?si=E-f1UcJvTIb53TFa" },
+      { icon: "⛽", title: "O&G Analytics Agent", desc: "Live analytics of O&G ops + predictive insights.", kpis: "Prod Rate", benefits: "Cuts losses", video: "https://www.youtube.com/embed/vnA9Fo-AP0o?si=MUGY_6_LFhswa0sc" },
+      { icon: "⚗️", title: "O&G Chemical Formula Agent", desc: "Real-time optimal chemical formulation agent.", kpis: "Dosage", benefits: "Reduces waste", video: "https://www.youtube.com/embed/v2Uagkv12LE?si=hyI436yWE2YTnj9w" },
       { icon: "🫯", title: "O&G Safety Agent", desc: "Workplace safety risk forecasting using GenAI.", kpis: "Incidents Avoided", benefits: "Prevents fatalities", video: "https://www.youtube.com/embed/PIyjbk0o88E" },
-      { icon: "🔄", title: "Renewable Energy Integration", desc: "Forecast + optimize renewable load using real-time data.", kpis: "Stability", benefits: "Balances renewables", video: "renewable_energy_integration_and_management.mp4" },
-      { icon: "💧", title: "Reservoir Analysis Agent", desc: "Simulator + GenAI-based reservoir advisory.", kpis: "Recovery Factor", benefits: "Improves recovery", video: "Reservoir_Analysis_Agent.mp4" },
-      { icon: "🚛", title: "Streamlining Field Ops Agent", desc: "Field task planner using risk, asset, and weather input.", kpis: "Dispatch Time", benefits: "Improves field ops", video: "Streamlining_Field_Ops_Agent.mp4" },
-      { icon: "🔗", title: "Supply Chain Opt Agent", desc: "Reorder, lead time & vendor optimization for utilities.", kpis: "Stock-outs", benefits: "Ensures readiness", video: "Supply_Chain_Opt_Agent.mp4" },
-      { icon: "👨‍💻", title: "Support Helper Agent", desc: "Auto-triage SAP tickets + LLM-based RCA/fix/KB.", kpis: "First Fix Rate", benefits: "Resolves tickets fast", video: "Support_Helper_Agent.mp4" },
-      { icon: "🚰", title: "Utility Energy Management Agent", desc: "Substation, load, and pricing advisor.", kpis: "Energy Usage", benefits: "Improves grid cost", video: "Utility_Energy_Management_Agent.mp4" },
-      { icon: "ἲ7️", title: "Water LLM Storm Simulator", desc: "Storm tank and pump overflow avoidance.", kpis: "Overflow", benefits: "Avoids CSOs", video: "Water_LLM_Storm_Simulator.mp4" }
+      { icon: "🔄", title: "Renewable Energy Integration", desc: "Forecast + optimize renewable load using real-time data.", kpis: "Stability", benefits: "Balances renewables", video: "https://www.youtube.com/embed/9-yZ73o58GQ?si=0G87HqjDmrvcOghS" },
+      { icon: "💧", title: "Reservoir Analysis Agent", desc: "Simulator + GenAI-based reservoir advisory.", kpis: "Recovery Factor", benefits: "Improves recovery", video: "https://www.youtube.com/embed/kAFxhIDegm4?si=S4HgoynSVNobnkzf" },
+      { icon: "🚛", title: "Streamlining Field Ops Agent", desc: "Field task planner using risk, asset, and weather input.", kpis: "Dispatch Time", benefits: "Improves field ops", video: "https://www.youtube.com/embed/AelLIhqky5k?si=aCk3IT2sPZ9mfBu9" },
+      { icon: "🔗", title: "Supply Chain Opt Agent", desc: "Reorder, lead time & vendor optimization for utilities.", kpis: "Stock-outs", benefits: "Ensures readiness", video: "https://www.youtube.com/embed/cx7TubN1NpM?si=FvzLHvE36zmBX33H" },
+      { icon: "👨‍💻", title: "Support Helper Agent", desc: "Auto-triage SAP tickets + LLM-based RCA/fix/KB.", kpis: "First Fix Rate", benefits: "Resolves tickets fast", video: "https://www.youtube.com/embed/li4kG8q4atA?si=YH7dSAYcXR8y3rWt" },
+      { icon: "🚰", title: "Utility Energy Management Agent", desc: "Substation, load, and pricing advisor.", kpis: "Energy Usage", benefits: "Improves grid cost", video: "https://www.youtube.com/embed/v0ANCJpgeM8?si=YQ1dEfvTRxuqJKli" },
+      { icon: "ἲ7️", title: "Water LLM Storm Simulator", desc: "Storm tank and pump overflow avoidance.", kpis: "Overflow", benefits: "Avoids CSOs", video: "https://www.youtube.com/embed/zK1q3wIUd7w?si=8y4e4LRvxXPuYLf3" }
     ];
 
     const cardsContainer = document.getElementById("cards");
